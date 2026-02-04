@@ -1,4 +1,4 @@
-# About This Company
+# About My Company
 
 This documentation demonstrates various MkDocs features and serves as a template for your projects.
 

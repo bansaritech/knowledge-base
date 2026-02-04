@@ -1,0 +1,156 @@
+site_name: Knowledge Base
+site_description: A comprehensive documentation example
+site_author: Your Name
+
+theme:
+  name: material
+  palette:
+    # Light mode
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+  font:
+    text: Inter
+    code: JetBrains Mono
+
+  features:
+    # Navigation
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.top
+    - navigation.footer
+
+    # Search
+    - search.suggest
+    - search.highlight
+    - search.share
+
+    # Content
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+
+    # Table of contents
+    - toc.follow
+
+  icon:
+    repo: fontawesome/brands/github
+
+# Navigation structure
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Installation: getting-started/installation.md
+    - Quick Start: getting-started/quickstart.md
+    - Configuration: getting-started/configuration.md
+  - User Guide:
+    - Markdown Basics: user-guide/markdown-basics.md
+    - Advanced Formatting: user-guide/advanced-formatting.md
+    - Code Examples: user-guide/code-examples.md
+  - API Reference:
+    - Overview: api/overview.md
+    - Endpoints: api/endpoints.md
+  - Examples:
+    - Tables & Lists: examples/tables-lists.md
+    - Images & Media: examples/images-media.md
+  - FAQ: faq.md
+  - About: about.md
+
+# Markdown extensions
+markdown_extensions:
+  # Table of contents
+  - toc:
+      permalink: true
+      toc_depth: 3
+
+  # Tables
+  - tables
+
+  # Admonitions (callouts)
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+  # Code highlighting
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+
+  # Content tabs
+  - pymdownx.tabbed:
+      alternate_style: true
+
+  # Task lists
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+  # Formatting
+  - pymdownx.mark
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.tilde
+
+  # Smart symbols
+  - pymdownx.smartsymbols
+
+  # Emojis
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+  # Lists
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+  # Abbreviations
+  - abbr
+  - attr_list
+  - md_in_html
+
+  # Footnotes
+  - footnotes
+
+# Plugins
+plugins:
+  - search:
+      lang: en
+  - tags
+
+# Extra settings
+extra:
+  version: 1.0.0
+
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/yourusername
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/yourusername
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/yourusername
+
+  generator: false
+
+# Custom CSS
+extra_css:
+  - stylesheets/extra.css

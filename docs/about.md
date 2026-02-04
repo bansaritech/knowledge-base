@@ -1,4 +1,4 @@
-# About This Project
+# About This Company
 
 This documentation demonstrates various MkDocs features and serves as a template for your projects.
 
@@ -38,14 +38,14 @@ knowledge-base/
 
 ## Page Types Demonstrated
 
-| Page Type | Example | Use Case |
-|-----------|---------|----------|
-| Landing Page | `index.md` | Project overview, quick links |
-| Tutorial | `quickstart.md` | Step-by-step guides |
-| Reference | `configuration.md` | Configuration options |
-| API Docs | `endpoints.md` | API reference documentation |
-| FAQ | `faq.md` | Common questions |
-| Examples | `code-examples.md` | Code samples, recipes |
+| Page Type    | Example            | Use Case                      |
+| ------------ | ------------------ | ----------------------------- |
+| Landing Page | `index.md`         | Project overview, quick links |
+| Tutorial     | `quickstart.md`    | Step-by-step guides           |
+| Reference    | `configuration.md` | Configuration options         |
+| API Docs     | `endpoints.md`     | API reference documentation   |
+| FAQ          | `faq.md`           | Common questions              |
+| Examples     | `code-examples.md` | Code samples, recipes         |
 
 ## Features Used
 
